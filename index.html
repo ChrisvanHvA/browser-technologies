@@ -8,19 +8,19 @@
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-
-<h1>Team shirts</h1>
+<article>
+<header>
+<img src="/img/logo.png" alt="logo">
 
 <p>Design your own shirt here!</p>
 
-
+</header>
 <section class="colorpicker">
 
-    <form action="/submitted.html">
+
         <p>Choose color</p>
           <input type="radio" id="red" name="color" value="red">
           <label for="html">red</label><br>
@@ -28,20 +28,20 @@
           <label for="css">white</label><br>
           <input type="radio" id="custom" name="color" value="custom">
           <label for="javascript">
-            <table> Custom color <br> <input type=”text” placeholder="#00000">
+           Custom color <br> <input type=”text” placeholder="#00000">
         </label>
 
 </section>
 
 <section class="text">
     <p>Add text</p>
-    <table> T-shirt text: <br>
+   
         <input type=”text” placeholder="type your teamname here">
 </section>
 
 
 <section class="size">
-    <form>
+   
         <p>Choose size</p>
 
         <input type="radio" id="s" name="size" value="S">
@@ -71,11 +71,11 @@
           <label for="radio">Unisex</label>
 
 </section>
-
+<form action="/submitted.html"></form>
 <input type="submit" value="Confirm & continue">
 <input type="reset" value="reset">
 </form>
-
+</article>
 
 </body>
 </html>
