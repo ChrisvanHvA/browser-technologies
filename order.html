@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 
 <html>
 
@@ -8,43 +9,58 @@
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h1>Place order</h1>
+<article>
+<header>
+<img src="/img/logo.png" alt="logo">
+<h2>Fill in your contact information so we can send the shirt to you!</h2>
 
 
+</header>
 <form action="/fakeserver.html">
     <section>
         <h2>who are we sending it to?</h2>
         <p>First name</p>
-        <input type=”text” placeholder="Jingo">
+        <input  id="firstname" type=”text” placeholder="Jingo">
         <p>Last name</p>
-        <input type=”text” placeholder="Dingo">
+        <input id="lastname" type=”text” placeholder="Dingo">
         <p>Email</p>
-        <input type=”text” placeholder="Jingo.dingo@email.com"> </label>
+        <input id="email" type=”text” placeholder="Jingo.dingo@email.com"> </label>
     </section>
     <section>
         <h2>Whats the adress</h2>
         <p>Street + NR</p>
-        <input type=”text” placeholder="freakylane 12">
+        <input id="streetnr" type=”text” placeholder="freakylane 12">
         <p>City</p>
-        <input type=”text” placeholder="New Donkle">
+        <input id="city" type=”text” placeholder="New Donkle">
         <p>Zip code</p>
-        <input type=”text” placeholder="6969 JK"> </label>
+        <input id="zip" type=”text” placeholder="6969 JK"> </label>
     </section>
     <section>
         <h2>Order confirmation</h2>
-        <p>cool color</p>
-        <p>cool text</p>
-        <p>cool size</p>
-        <p>cool gender</p>
+        <ul id="example" class="colorshirt">
 
+            <li>
+        <img src="img/shirt.png">
+        <div id="overlay"></div>
+        <h2 class="name"> <span id="nameresult"></span></h2>
+        </li>
+
+       <div class="confirmation">
+        <p> Size: <span id="sizeresult">no size</span></p>
+        <p>Gender: <span id="genderresult">no gender?</span></p>
+</div>
     </section>
-    <input type="submit" value="Place order and pay">
-    <input type="submit" value="Place order and pay">
-</form>
+    <div class="footerbuttons">
 
-<a href="/submitted.html"><input type="reset" value="we gotta go back"></a>
+    <input id="submitorder" type="submit" value="Place order">
+
+<input type="reset" value="Reset fields">
+<a id="backbutton" href="/submitinfo.html">Go back</a>
+</form>
+</div>
+<script src="script2.js"></script>
 </body>
 </html>

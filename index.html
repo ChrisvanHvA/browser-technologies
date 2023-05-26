@@ -10,72 +10,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-<article>
-<header>
-<img src="/img/logo.png" alt="logo">
+    <article>
+        <header>
+            <img src="/img/logo.png" alt="logo">
 
-<p>Design your own shirt here!</p>
+            <p>Design your own shirt here!</p>
 
-</header>
-<section class="colorpicker">
+        </header>
+        <section class="colorpicker">
+            <ul class="colorshirt">
+                <li>
+                    <form id="indexForm" action="/submitted.html" method="get">
+                        <h3>Choose color</h3>
+                          <input type="radio" id="red" name="color" value="red">
+                          <label>red</label><br>
+                          <input type="radio" id="white" name="color" value="white">
+                          <label>white</label><br>
+                          <input type="radio" id="custom" name="color" value="custom">
+                          <label>
+                            Custom color <br> <input value="00F7FF" id="quantity" name="quantity">
+                            <p id="trybutton">try out</p>
+                        </label>
+                </li>
+                <li>
+                    <img src="img/shirt.png">
+                    <div id="overlay"></div>
+                </li>
+            </ul>
+        </section>
+
+        <section class="text">
+            <h3>Add text</h3>
+            <textarea rows="3" id="txt" cols="40" placeholder="type your teamname here"></textarea>
+        </section>
 
 
-        <p>Choose color</p>
-          <input type="radio" id="red" name="color" value="red">
-          <label for="html">red</label><br>
-          <input type="radio" id="white" name="color" value="white">
-          <label for="css">white</label><br>
-          <input type="radio" id="custom" name="color" value="custom">
-          <label for="javascript">
-           Custom color <br> <input type=”text” placeholder="#00000">
-        </label>
+        <section class="size">
+            <h3>Choose size</h3>
+            <input type="radio" id="s" name="size" value="S">
+              <label for="html">S</label>
+              <input type="radio" id="m" name="size" value="M">
+              <label for="radio">M</label>
+              <input type="radio" id="L" name="size" value="L">
+              <label for="radio">L</label>
+              <input type="radio" id="XL" name="size" value="xl">
+              <label for="radio">XL</label>
+        </section>
 
-</section>
-
-<section class="text">
-    <p>Add text</p>
-   
-        <input type=”text” placeholder="type your teamname here">
-</section>
-
-
-<section class="size">
-   
-        <p>Choose size</p>
-
-        <input type="radio" id="s" name="size" value="S">
-          <label for="html">S</label>
-
-          <input type="radio" id="m" name="size" value="M">
-          <label for="radio">M</label>
-          <input type="radio" id="L" name="size" value="L">
-          <label for="radio">L</label>
-
-          <input type="radio" id="xL" name="size" value="xl">
-          <label for="radio">XL</label>
-
-         
-</section>
-
-<section class="size">
-    <form>
-        <p>Gender</p>
-
-        <input type="radio" id="male" name="gender" value="male">
-          <label for="html">Male</label>
-
-          <input type="radio" id="female" name="gender" value="female">
-          <label for="radio">Female</label>
-          <input type="radio" id="unisex" name="gender" value="unisex">
-          <label for="radio">Unisex</label>
-
-</section>
-<form action="/submitted.html"></form>
-<input type="submit" value="Confirm & continue">
-<input type="reset" value="reset">
-</form>
-</article>
-
+        <section class="size">
+            <h3>Gender</h3>
+            <input type="radio" id="male" name="gender" value="male">
+              <label for="html">Male</label>
+              <input type="radio" id="female" name="gender" value="female">
+              <label for="radio">Female</label>
+              <input type="radio" id="unisex" name="gender" value="unisex">
+              <label for="radio">Uni</label>
+        </section>
+        
+        <div class="footerbuttons">
+            <input type="submit" id="sendInfo" value="continue">
+            <input type="reset" value="reset">
+        </div>
+    </article>
+    <script src="script.js"></script>
 </body>
+
 </html>

@@ -1,91 +1,308 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-font-family: roboto;
 
-  }
-  body {
-    
+
+    font-family: roboto;
+
+}
+
+body {
+
     color: rgb(147, 255, 132);
-    background: rgb(40,40,40);
+    background: rgb(40, 40, 40);
     background: linear-gradient(0deg, rgb(22, 41, 32) 10%, rgb(26, 26, 26) 50%);
 
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #2f0019;
-opacity: 1;
-background-color: #2f0019;
-opacity: 1;
+    opacity: 1;
+    background-color: #2f0019;
+    opacity: 1;
 
 }
-header  img {
-    width: 100%;
+
+header img {
+    width: 80%;
+    height: auto;
+    padding: 1em;
+
 }
 
 h1 {
     font-size: 10vw;
-   text-transform: uppercase;
-   padding: 1em 0em 0.5em 0em;
-   font-weight: bolder;
+    text-transform: uppercase;
+    padding: 1em 0em 0.5em 0em;
+    font-weight: bolder;
 }
-p:first-of-type {
+
+h3 {
     color: rgb(67, 252, 113);
-    padding: 0.5em;
-   font-weight: 600;
-   text-transform: uppercase;
-   
+    padding: 0em 0em 0.5em 0.5em;
+    font-weight: 600;
+    text-transform: uppercase;
+
 }
+
+header {
+    text-align: center;
+}
+
 header p:first-of-type {
     color: rgb(234, 94, 176);
-    margin-bottom: 2em;
+
+    padding: 0.5em;
+    font-weight: 600;
+    text-transform: uppercase;
 }
-  article {
+
+article {
     width: 80%;
     max-width: 50em;
 
-display: flex;
-flex-direction: column;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-  }
+    align-content: center;
+}
 
 section {
-    color:white;
-  width: 100%;
+    width: 85%;
+    color: white;
+    max-width: 90%;
+
     margin: 1em;
-    padding: 5vw;
-  border-radius: 0.5em;
-   background-color: rgb(20, 20, 20);
-   border: 1px solid rgb(94, 199, 96);
-   transition: all 0.3s;
-   
+    padding: 2vw 2vw 2vw 2vw;
+    border-radius: 0.5em;
+    background-color: rgb(20, 20, 20);
+    border: 1px solid rgb(94, 199, 96);
+    transition: all 0.3s;
+
+}
+
+.confirmation {
+    margin-top: 2em;
+    padding: 2em;
+    font-size: 1em
 }
 
 section:hover {
 
-border:1px solid rgb(188, 77, 177);
+    border: 1px solid rgb(188, 77, 177);
     background: linear-gradient(0deg, rgb(0, 0, 0) 24%, rgba(95, 3, 98, 0.398) 100%);
-   
 
-  animation: glow 4s infinite;
-  filter: drop-shadow(0px 0px 6px #f00040);
+
+    animation: glow 4s infinite;
+    filter: drop-shadow(0px 0px 6px #f00040);
 }
+
 @keyframes glow {
     0% {
         box-shadow: 0px 0px 20px 3.5px rgba(0, 4, 216, 0.45);
     }
+
     50% {
-        box-shadow: 0px 0px 50px 3.5px  rgba(4, 114, 211, 0.596);
+        box-shadow: 0px 0px 50px 3.5px rgba(4, 114, 211, 0.596);
     }
+
     100% {
         box-shadow: 0px 0px 20px 3.5px rgba(0, 4, 216, 0.45);
     }
 }
-section:hover > p:first-of-type {
+
+section:hover>p:first-of-type {
     color: rgb(234, 94, 176);
 }
+
 section input {
 
-margin: 0.5em;
+    margin: 0.5em;
+}
+
+input,
+a#backbutton {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border: 1px solid rgb(72, 180, 72);
+    border-radius: 0.2em;
+    padding: 1em;
+    font-size: 0.9em;
+    width: 6em;
+}
+
+a#backbutton {
+    text-align: center;
+    border-radius: 0.2em;
+}
+
+input[type="radio"] {
+    appearance: none;
+
+
+    margin: 0.1em;
+    font: inherit;
+    color: currentColor;
+    width: 0.2em;
+    height: 0.2em;
+    border: 0.1em solid rgb(255, 255, 255);
+    transition: all 0.3s;
+}
+
+input[type="radio"]:checked {
+    background-color: rgb(123, 255, 100);
+    box-shadow: 0px 0px 20px 1.5px rgba(116, 238, 128, 0.785);
+}
+
+ul.colorshirt {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+ul.colorshirt>li>img {
+    padding: 0.5em;
+    margin: 1em;
+
+    width: 10em;
+    height: 10em;
+
+    height: auto;
+    background-color: black;
+    border-radius: 1em;
+    border: 1px solid white;
+}
+
+ul#example {
+
+    justify-content: center;
+    padding: 2em;
+}
+
+ul#example>li>img {
+    width: 15em;
+    height: 15em;
+
+}
+
+#overlay {
+    position: relative;
+    background-color: #663399;
+    padding: 0.5em;
+    width: 9.5em;
+    height: 9em;
+    margin-top: -12em;
+    border-radius: 1em;
+    margin-left: 1.5em;
+    mix-blend-mode: multiply;
+    margin-bottom: 2em;
+
+}
+
+ul#example>li>#overlay {
+    margin-top: -17em;
+    margin-left: 1.5em;
+    width: 14em;
+    height: 14em;
+
+}
+
+h2.name {
+    text-shadow:
+        3px 3px 0 #c1c1c1,
+        -1px -1px 0 #c1c1c1,
+        1px -1px 0 #c1c1c1,
+        -1px 1px 0 #c1c1c1,
+        1px 1px 0 #c1c1c1;
+    color: rgb(0, 0, 0);
+    font-size: 1.5em;
+    margin-top: -7em;
+    margin-bottom: 6em;
+    text-align: center;
+}
+
+textarea {
+    width: 20em;
+    height: 5em;
+    padding: 0.5em;
+    border-radius: 0.2em;
+    border: 2px solid rgb(72, 180, 72);
+    background-color: rgb(192, 192, 192);
+}
+
+
+.footerbuttons {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.footerbuttons button,
+.footerbuttons input {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border: 1px solid rgb(72, 180, 72);
+    border-radius: 0.2em;
+
+
+    min-width: 8em;
+    min-height: 3em;
+    max-height: 3em;
+    border-radius: 0.4em;
+    font-size: 1em;
+    margin: 0.5em;
+}
+
+.serverinfo {
+    margin: 5em 2em 8em 2em;
+
+
+    list-style: none;
+}
+
+label {
+    font-size: 0.9em;
+}
+
+.serverinfo>li {
+    text-align: center;
+    font-weight: bold;
+    margin: 1em;
+
+}
+
+.serverinfo>li>p {
+    color: rgb(214, 112, 175);
+}
+
+.footerbuttons input:last-child,
+a#backbutton {
+    border: 1px solid rgb(146, 2, 2);
+}
+
+.footerbuttons input:last-child:hover,
+a#backbutton:hover {
+    background-color: rgb(172, 0, 0);
+    box-shadow: 0px 0px 20px 1.5px rgba(240, 25, 50, 0.396);
+}
+
+.footerbuttons button:first-child:hover,
+input:first-child:hover {
+    background-color: rgb(1, 122, 1);
+    box-shadow: 0px 0px 20px 1.5px rgba(68, 240, 25, 0.396);
+}
+
+.footerbuttons input:nth-child(2) {
+    border: 1px solid rgba(237, 115, 9, 0.859);
+    color: white;
+}
+
+.footerbuttons input:nth-child(2):hover {
+    background-color: rgb(223, 100, 12);
+    box-shadow: 0px 0px 20px 1.5px rgba(240, 125, 25, 0.396);
 }
